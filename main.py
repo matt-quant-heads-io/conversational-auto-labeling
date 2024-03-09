@@ -2,6 +2,7 @@ from annotators.person_detection_annotator import (
     PersonDetectionAnnotator,
     create_annotations_from_prediction,
 )
+import constants
 
 
 def main():
