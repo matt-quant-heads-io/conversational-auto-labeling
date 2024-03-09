@@ -1,0 +1,6 @@
+black==24.2.0
+ultralytics==8.1.10
+supervision==0.18.0
+gunicorn==21.2.0
+label_studio_ml==1.0.9
+rq==1.15.1
