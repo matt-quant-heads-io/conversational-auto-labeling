@@ -2,7 +2,6 @@
 """Data Loader"""
 
 import jsonschema
-
 import tensorflow_datasets as tfds
 
 from configs.data_schema import SCHEMA

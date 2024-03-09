@@ -1,19 +1,18 @@
-import os
-import logging
-import uuid
 import io
 import json
-import urllib.request
+import logging
+import os
 import pathlib
+import urllib.request
+import uuid
 
 import cv2
-from ultralytics import YOLO
 from label_studio_ml.model import LabelStudioMLBase
 from label_studio_tools.core.utils.io import get_data_dir
+from ultralytics import YOLO
 
 import constants
 import utils.utils as utils
-
 
 logger = logging.getLogger(__name__)
 
