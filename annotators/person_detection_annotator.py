@@ -174,13 +174,13 @@ def get_tasks_by_project_name(project_name):
     return tasks
 
 
-def create_annotations_from_prediction(project_name):
+def create_annotations_from_prediction(pda, project_name):
     project_info = get_project_info_by_name(project_name)
     project_id = project_info["id"]
     tasks_info = get_tasks_by_project_name(project_name)
 
     for task_info in tasks_info:
-        result_info = pdo.predict_one_task(task_info)
+        result_info = pda.predict_one_task(task_info)
         print(f"task_info: {task_info}")
         task_id, results = result_info["task_id"], result_info["result"]
 
@@ -220,5 +220,5 @@ def create_annotations_from_prediction(project_name):
             print(f"[POST REQUEST> Created annotations]: {resp}")
 
 
-pdo = PersonDetectionAnnotator()
-create_annotations_from_prediction(constants.PROJECT_NAME)
+# pdo = PersonDetectionAnnotator()
+# create_annotations_from_prediction(constants.PROJECT_NAME)
