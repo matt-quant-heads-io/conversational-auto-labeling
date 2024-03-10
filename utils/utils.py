@@ -13,15 +13,17 @@ def get_single_tag_keys(parsed_label_config: Dict):
     tag = None
     from_name = None
     to_name = None
-    labels = []
+    labels_attrs = {}
     for k, v in parsed_label_config.items():
         tag = k
         to_name = v.get("to_name")[0]
         from_name = v["inputs"][0]["value"]
-        labels = v["labels"]
+        labels_attrs = {
+            label_key.lower(): label_val["value"]
+            for label_key, label_val in v["labels_attrs"].items()
+        }
 
-    print(f"tag: {tag}, to_name: {to_name}, from_name: {from_name}, labels: {labels}, ")
-    return tag, to_name, from_name, labels
+    return tag, to_name, from_name, labels_attrs
 
 
 def get_image_size(filepath):

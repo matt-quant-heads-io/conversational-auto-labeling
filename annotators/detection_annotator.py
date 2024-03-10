@@ -1,15 +1,15 @@
 import io
 import json
-import os
 import pathlib
 
 import cv2
 from label_studio_ml.model import LabelStudioMLBase
-from label_studio_tools.core.utils.io import get_data_dir
 from ultralytics import YOLO
 
 import constants
 import utils.utils as utils
+
+PROJECT_ROOT_PATH = str(pathlib.Path(__file__).parent.parent.resolve())
 
 
 def json_load(file, int_keys=False):
@@ -57,21 +57,17 @@ class DetectionAnnotator(LabelStudioMLBase):
         self.checkpoint_file = (
             str(pathlib.Path(__file__).parent.resolve()) + "/models/yolov8x.pt"
         )
-        self.image_path = (
-            str(pathlib.Path(__file__).parent.parent.resolve()) + "/data/images"
-        )
+        self.image_path = f"{PROJECT_ROOT_PATH}/data/images"
         self.labels_file = "labels_config.json"
         self.parsed_label_config = json_load(
-            f"{str(pathlib.Path(__file__).parent.parent.resolve())}/configs/{self.labels_file}"
+            f"{PROJECT_ROOT_PATH}/configs/{self.labels_file}"
         )
-        # TODO: load this in from project req response
-        self.label_map = {"Person": "Person", "person": "Person"}
 
         (
             self.from_name,
             self.to_name,
             self.value,
-            self.labels_in_config,
+            self.label_map,
         ) = utils.get_single_tag_keys(self.parsed_label_config)
 
         self.model = YOLO(self.checkpoint_file)

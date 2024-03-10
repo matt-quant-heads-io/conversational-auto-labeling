@@ -17,7 +17,6 @@ def get_project_info_by_name(project_name):
     """
     req = urllib.request.Request(constants.GET_PROJECTS_HTTP_REQ)
     req.add_header("Authorization", f"Token {constants.LABEL_STUDIO_ACCESS_TOKEN}")
-    print(f"req: {req}")
     projects = json.loads(
         urllib.request.urlopen(req).read().decode().replace("'", '"')
     ).get("results")
@@ -71,7 +70,6 @@ def create_annotations_from_prediction(pda, project_name):
 
     for task_info in tasks_info:
         result_info = pda.predict_one_task(task_info)
-        print(f"task_info: {task_info}")
         task_id, results = result_info["task_id"], result_info["result"]
 
         post_req_body = {
