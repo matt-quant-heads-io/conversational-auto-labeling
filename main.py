@@ -4,6 +4,7 @@ import urllib.request
 import uuid
 
 import constants
+import utils.upload as upload
 from annotators import ANNOTATORS_MAP
 
 
@@ -127,6 +128,7 @@ def main(args):
         args (undefined):
 
     """
+    upload.run()
     annotator = ANNOTATORS_MAP[args.annotator_type]()
     create_annotations_from_prediction(annotator, args.project_name)
 

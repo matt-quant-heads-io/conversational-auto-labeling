@@ -4,7 +4,8 @@ import pathlib
 
 import constants
 
-PATH_TO_FRAMES = str(pathlib.Path(__file__).parent.resolve()) + "/data/images"
+
+PATH_TO_FRAMES = str(pathlib.Path(__file__).parent.parent.resolve()) + "/data/images"
 LABEL_STUDIO_PROJECT_ID = 1
 
 
@@ -48,7 +49,3 @@ def run(verbose=False):
     if verbose:
         upload_time = (end_time - start_time).total_seconds()
         print(f"It took {upload_time} seconds to upload {num_files_uploaded} img files")
-
-
-if __name__ == "__main__":
-    run(verbose=True)
