@@ -51,7 +51,6 @@ class DetectionAnnotator(LabelStudioMLBase):
     def __init__(
         self,
         score_threshold=0.5,
-        device="cpu",
         **kwargs,
     ):
         super(DetectionAnnotator, self).__init__(**kwargs)
@@ -112,7 +111,6 @@ class DetectionAnnotator(LabelStudioMLBase):
         results = []
         all_scores = []
         img_width, img_height = utils.get_image_size(image_path)
-        classes = constants.PDO_CLASSES
         model_results = self.model(cv2.imread(image_path))[0]
         for model_result in model_results:
             pred = json.loads(model_result.tojson())
