@@ -1,5 +1,6 @@
 black==24.2.0
 isort==5.13.2
+pylint
 ultralytics==8.1.10
 supervision==0.18.0
 gunicorn==21.2.0

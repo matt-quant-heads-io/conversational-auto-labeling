@@ -1,24 +1,18 @@
-import logging.config
-
-import yaml
-
-with open("configs/logging_config.yaml", "r") as f:
-    config = yaml.safe_load(f.read())
-    logging.config.dictConfig(config)
-    logging.captureWarnings(True)
+import logging
+import pathlib
+import sys
 
 
-def get_logger(name: str):
-    """Logs a message
-    Args:
-    name(str): name of logger
+def init_logger(log_name: str = "main", log_root_path: str = None):
     """
-    logger = logging.getLogger(name)
-    return logger
+    Description of init_logger
 
+    Args:
+        log_name="main" (undefined):
+        log_root_path=None (undefined):
 
-def init_logger(log_name="main"):
-    log_root = pathlib.Path(__file__).parent.resolve()
+    """
+    log_root = log_root_path or pathlib.Path(__file__).parent.resolve()
     log_file = f"{log_root}/{log_name}.log"
     logging.basicConfig(
         level=logging.INFO,
