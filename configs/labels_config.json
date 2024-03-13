@@ -11,14 +11,21 @@
       }
     ],
     "labels": [
-      "Person"
+      "Person",
+      "Car"
     ],
     "labels_attrs": {
       "Person": {
         "value": "Person",
         "background": "#14db36",
         "showInline": "true"
+      },
+      "Car": {
+        "value": "Car",
+        "background": "#ed0707",
+        "showInline": "true"
       }
+
     }
   }
 }
