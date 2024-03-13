@@ -1,4 +1,6 @@
-# aimakr-automated-data-annotaton
+![Demo](docs/media/auto_annotation_demo.gif)
+
+# Automated Data Annotation for Computer Vision Applications
 
 ## Setup & Install
 Installing via Conda
