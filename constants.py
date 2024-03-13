@@ -18,6 +18,3 @@ LOCAL_TO_ABS_IMAGE_PATH_PREFIX_MAP = {
 }
 LOCAL_IMG_PATH_FOR_PROJECT_ROOT = LOCAL_IMG_PATH_PREFIX + "/{project_id}"
 DATA_UNDEFINED_NAME = "$undefined$"
-
-# TODO: Read this in from config
-PDO_CLASSES = ["Person"]
