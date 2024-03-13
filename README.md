@@ -1,4 +1,4 @@
-![Demo](docs/media/auto_annotation_demo.gif)
+<img src="docs/media/auto_annotation_demo.gif" width="1200" height="600" />
 
 # Automated Data Annotation for Computer Vision Applications
 
