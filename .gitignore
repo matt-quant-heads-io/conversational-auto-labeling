@@ -160,5 +160,4 @@ cython_debug/
 #.idea/
 *label.txt
 __pycache__
-data/*
 .DS_STORE
