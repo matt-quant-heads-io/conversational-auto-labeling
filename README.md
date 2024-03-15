@@ -51,6 +51,7 @@ Inside of constants.py, update the following values specific to your setup.
 <img src="docs/media/input_ls_env_vars.png" width="638" height="72" />
 
 Note: To grab your Access Token, navigate to the account page within the Label Studio UI and copy the token to your clipboard (see page below),
+<img src="docs/media/example_ls_account_token.jpeg" width="861" height="315" />
 
 
 
