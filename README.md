@@ -27,7 +27,7 @@ python label_studio/manage.py runserver
 
 Access http://localhost:8080 from your browser. If the setup went smoothly you should see the following page.
 
-<img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+<img src="docs/media/create_acct_screen.png" width="538" height="662" />
 
 
 ## Creating the Label Studio project
