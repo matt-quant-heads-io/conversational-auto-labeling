@@ -1,4 +1,7 @@
-<img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+<p align="center">
+  <img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+</p>
+
 
 # Automated Label System for Computer Vision Applications
 
@@ -27,12 +30,16 @@ python label_studio/manage.py runserver
 
 Access http://localhost:8080 from your browser. If the setup went smoothly you should see the following page.
 
-<img src="docs/media/create_acct_screen.png" width="538" height="662" />
+<p align="center">
+  <img src="docs/media/create_acct_screen.png" width="538" height="662" />
+</p>
+
 
 
 ## Creating the Label Studio project
 ### Create a (free) account
 Create a project and call it “automated annotation 1”
+
 Access the labelling interface in the project settings and copy and paste the following code snippet:
 ```
 <View>
@@ -44,14 +51,25 @@ Access the labelling interface in the project settings and copy and paste the fo
 </View>
 ```
 
+Your page should look like the page below.
+<p align="center">
+  <img src="docs/media/auto_labeling_interface.png" width="714" height="493" />
+</p>
+
 Click the save button.
 
 ## Run the auto-label system
 Inside of constants.py, update the following values specific to your setup. 
-<img src="docs/media/input_ls_env_vars.png" width="638" height="72" />
+<p align="center">
+  <img src="docs/media/input_ls_env_vars.png" width="638" height="72" />
+</p>
+
 
 Note: To grab your Access Token, navigate to the account page within the Label Studio UI and copy the token to your clipboard (see page below),
-<img src="docs/media/example_ls_account_token.jpeg" width="861" height="315" />
+<p align="center">
+  <img src="docs/media/example_ls_account_token.jpeg" width="861" height="315" />
+</p>
+
 
 
 
