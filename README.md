@@ -16,7 +16,7 @@ python -m pip install -R requirements.txt
 ## Install label studio dependencies via conda
 ```
 git clone https://github.com/HumanSignal/label-studio.git
-conda create --name label-studio
+conda create -n label-studio python=3.8
 conda activate label-studio
 cd label-studio
 python -m pip install -e .
