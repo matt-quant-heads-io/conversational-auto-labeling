@@ -13,8 +13,9 @@ conda activate auto_annotation
 cd aimakr-automated-data-annotaton
 python -m pip install -r requirements.txt
 ```
-## Install label studio dependencies via conda
+## Install label studio dependencies via conda (in a new terminal)
 ```
+cd
 git clone https://github.com/HumanSignal/label-studio.git
 conda create -n label-studio python=3.8
 conda activate label-studio
