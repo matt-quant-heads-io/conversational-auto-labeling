@@ -2,40 +2,40 @@
 
 # Automated Data Annotation for Computer Vision Applications
 
-## Setup & Install
-Install aimakr auto annotation 
-Git clone repo
+## Install the dependencies via conda
+```
 git clone https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton.git
-Create conda environment
 conda create -n auto_annotation python=3.8
-Activate conda environment
 conda activate auto_annotation
-Install the dependencies
+cd aimakr-automated-data-annotaton
 python -m pip install -R requirements.txt
-Install open source label studio UI
-Git clone repo 
+```
+## Install label studio dependencies via conda
+```
 git clone https://github.com/HumanSignal/label-studio.git
-Create conda environment
 conda create --name label-studio
-Activate conda environment
 conda activate label-studio
-Install all package dependencies
 python -m pip install -e .
-Run database migrations
+```
+
+## Run Label Studio database migrations
+```
 python label_studio/manage.py migrate
 python label_studio/manage.py collectstatic
 Start the server in development mode at http://localhost:8080
 python label_studio/manage.py runserver
+```
 
-Setup the project within Label Studio
-Access http://localhost:8080 in your browser
-You should see this:
+Access http://localhost:8080 from your browser. If the setup went smoothly you should see the following page.
+
+<img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
 
 
-
-Create a login account
+## Creating the Label Studio project
+### Create a (free) account
 Create a project and call it “automated annotation 1”
 Access the labelling interface in the project settings and copy and paste the following code snippet:
+```
 <View>
   <Image name="image" value="$image"/>
   <Header value="Rectangle Labels"/>
@@ -43,13 +43,20 @@ Access the labelling interface in the project settings and copy and paste the fo
     <Label value="Person" background="#1e05d6"/>
   <Label value="Car" background="#ed0707"/></RectangleLabels>
 </View>
-
+```
 
 Select the save button
-Run the auto annotation code
- Access the terminal within the aimakr-automated-data-annotation repo and run the following command:
+
+## Run the auto annotation code
+Inside of constants.py, update the following values specific to your setup.
+<img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+
+Access the terminal within the aimakr-automated-data-annotation repo and run the following command:
+```
 python main.py --annotator_type detection_annotator
-After the script is complete you should see the following uploaded images and the corresponding annotated bounding boxes for the Person and Car labels contained therein.
+```
+
+After the script is complete you should see the auto-labeled images detailed in the header gif.
 
 
 
