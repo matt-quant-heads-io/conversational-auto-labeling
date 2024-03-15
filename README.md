@@ -1,6 +1,6 @@
 <img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
 
-# Automated Data Annotation for Computer Vision Applications
+# Automated Label System for Computer Vision Applications
 
 ## Install the dependencies via conda
 ```
@@ -22,7 +22,6 @@ python -m pip install -e .
 ```
 python label_studio/manage.py migrate
 python label_studio/manage.py collectstatic
-Start the server in development mode at http://localhost:8080
 python label_studio/manage.py runserver
 ```
 
@@ -45,11 +44,15 @@ Access the labelling interface in the project settings and copy and paste the fo
 </View>
 ```
 
-Select the save button
+Click the save button.
 
-## Run the auto annotation code
-Inside of constants.py, update the following values specific to your setup.
-<img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+## Run the auto-label system
+Inside of constants.py, update the following values specific to your setup. 
+<img src="docs/media/input_ls_env_vars.png" width="638" height="72" />
+
+Note: To grab your Access Token, navigate to the account page within the Label Studio UI and copy the token to your clipboard (see page below),
+
+
 
 Access the terminal within the aimakr-automated-data-annotation repo and run the following command:
 ```
