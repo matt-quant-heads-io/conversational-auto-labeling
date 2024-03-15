@@ -11,7 +11,7 @@ git clone https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton
 conda create -n auto_annotation python=3.8
 conda activate auto_annotation
 cd aimakr-automated-data-annotaton
-python -m pip install -R requirements.txt
+python -m pip install -r requirements.txt
 ```
 ## Install label studio dependencies via conda
 ```
