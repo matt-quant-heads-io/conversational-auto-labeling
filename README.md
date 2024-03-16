@@ -1,4 +1,6 @@
-# Auto-labeling for Computer Vision Applications
+<h1 align="center"> Auto-labeling for Computer Vision Applications </h1>
+<br>
+<br>
 <p align="center">
   <img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
 </p>
