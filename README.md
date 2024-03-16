@@ -1,9 +1,7 @@
+# Auto-labeling for Computer Vision Applications
 <p align="center">
   <img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
 </p>
-
-
-# Automated Label System for Computer Vision Applications
 
 ## Install the dependencies via conda
 ```
