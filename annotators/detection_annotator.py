@@ -59,7 +59,7 @@ class DetectionAnnotator(LabelStudioMLBase):
         )
         self.image_path = f"{PROJECT_ROOT_PATH}/data/images"
         self.labels_file = "labels_config.json"
-        self.parsed_label_config = json_load(
+        self.parsed_label_config = kwargs.get("labels_conf") or json_load(
             f"{PROJECT_ROOT_PATH}/configs/{self.labels_file}"
         )
 
