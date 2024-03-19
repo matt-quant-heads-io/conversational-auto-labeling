@@ -1,4 +1,18 @@
-<h1 align="center"> Auto-labeling for Computer Vision Applications </h1>
+<h1 align="center">Conversational Auto-labeling for Computer Vision Tasks</h1>
+<p align="center">
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
+<a href="https://arbeitnow.com/?utm_source=awesome-github-profile-readme"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=arbeitnow&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<!-- <img src="http://hits.dwyl.com/abhisheknaiidu/awesome-github-profile-readme.svg" alt="Hits Badge"/> -->
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+  
+<br>
+<a href="https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton/stargazers"><img src="https://img.shields.io/github/stars/matt-quant-heads-io/aimakr-automated-data-annotaton" alt="Stars Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/network/members"><img src="https://img.shields.io/github/forks/matt-quant-heads-io/aimakr-automated-data-annotaton" alt="Forks Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/pulls"><img src="https://img.shields.io/github/issues-pr/matt-quant-heads-io/aimakr-automated-data-annotaton" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/matt-quant-heads-io/aimakr-automated-data-annotaton" alt="Issues Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/matt-quant-heads-io/aimakr-automated-data-annotaton?color=2b9348"></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/LICENSE"><img src="https://img.shields.io/github/license/matt-quant-heads-io/aimakr-automated-data-annotaton?color=2b9348" alt="License Badge"/></a>
+</p>
 <br>
 <br>
 <p align="center">
