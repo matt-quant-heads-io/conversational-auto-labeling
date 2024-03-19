@@ -19,7 +19,21 @@
   <img src="docs/media/conversational_autolabeling.gif" width="960" height="540" />
 </p>
 
-## Install the dependencies via conda
+
+### Contents:
+  - [Sections](#sections)
+      - [Install the dependencies via conda](#install-the-dependencies-via-conda)
+      - [Install label studio dependencies via conda (in a new terminal)](#install-label-studio-dependencies-via-conda-in-a-new-terminal)
+      - [Run Label Studio database migrations](#run-label-studio-database-migrations)
+      - [Creating the Label Studio project](#creating-the-label-studio-project)
+      - [Create a (free) account](#create-a-free-account)
+      - [Run the auto-label system](#run-the-auto-label-system)
+  - [Contribute](#contribute)
+  - [License](#license)
+
+## Sections
+
+### Install the dependencies via conda
 ```
 git clone https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton.git
 conda create -n auto_annotation python=3.8
@@ -27,7 +41,7 @@ conda activate auto_annotation
 cd aimakr-automated-data-annotaton
 python -m pip install -r requirements.txt
 ```
-## Install label studio dependencies via conda (in a new terminal)
+### Install label studio dependencies via conda (in a new terminal)
 ```
 cd # i.e. from your home dir
 git clone https://github.com/HumanSignal/label-studio.git
@@ -37,7 +51,7 @@ cd label-studio
 python -m pip install -e .
 ```
 
-## Run Label Studio database migrations
+### Run Label Studio database migrations
 ```
 python label_studio/manage.py migrate
 python label_studio/manage.py collectstatic
@@ -52,8 +66,8 @@ Access http://localhost:8080 from your browser. If the setup went smoothly you s
 
 
 
-## Creating the Label Studio project
-### Create a (free) account
+### Creating the Label Studio project
+#### Create a (free) account
 Create a project and call it “automated annotation 1”
 
 Access the labelling interface in the project settings and copy and paste the following code snippet:
@@ -96,6 +110,10 @@ python main.py --annotator_type detection_annotator
 
 After the script is complete you should see the auto-labeled images detailed in the header gif.
 
+## Contribute
 
+Contributions are always welcome!
 
+## License
 
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
