@@ -88,11 +88,10 @@ Your page should look like the page below.
 Click the save button.
 
 ## Run the auto-label system
-Inside of constants.py, update the following values specific to your setup. 
+Inside of chat_app/constants.py, update the following values specific to your setup. 
 <p align="center">
   <img src="docs/media/input_ls_env_vars.png" width="638" height="72" />
 </p>
-
 
 Note: To grab your Access Token, navigate to the account page within the Label Studio UI and copy the token to your clipboard (see page below),
 <p align="center">
@@ -100,11 +99,9 @@ Note: To grab your Access Token, navigate to the account page within the Label S
 </p>
 
 
-
-
-Access the terminal within the aimakr-automated-data-annotation repo and run the following command:
+Access the terminal, cd into aimakr-automated-data-annotation/chat_app and run via:
 ```
-python main.py --annotator_type detection_annotator
+./run
 ```
 
 After the script is complete you should see the auto-labeled images detailed in the header gif.
