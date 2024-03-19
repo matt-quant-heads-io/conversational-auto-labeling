@@ -77,7 +77,7 @@ Access the labelling interface in the project settings and copy and paste the fo
   <Header value="Rectangle Labels"/>
   <RectangleLabels name="tag1" toName="image">
     <Label value="Person" background="#1e05d6"/>
-  	<Label value="Car" background="#ed0707"/>
+    <Label value="Car" background="#ed0707"/>
     <Label value="parking meter" background="#9effec"/>
     <Label value="fire hydrant" background="#d3cc0d"/>
     <Label value="stop sign" background="#FFC069"/>
