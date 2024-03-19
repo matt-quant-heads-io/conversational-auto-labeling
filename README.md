@@ -16,7 +16,7 @@
 <br>
 <br>
 <p align="center">
-  <img src="docs/media/auto_annotation_demo.gif" width="960" height="540" />
+  <img src="docs/media/conversational_autolabeling.gif" width="960" height="540" />
 </p>
 
 ## Install the dependencies via conda
