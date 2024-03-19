@@ -12,7 +12,10 @@
     ],
     "labels": [
       "Person",
-      "Car"
+      "Car",
+      "fire hydrant",
+      "stop sign",
+      "parking meter"
     ],
     "labels_attrs": {
       "Person": {
@@ -23,6 +26,21 @@
       "Car": {
         "value": "Car",
         "background": "#ed0707",
+        "showInline": "true"
+      },
+      "fire hydrant": {
+        "value": "fire hydrant",
+        "background": "#9effec",
+        "showInline": "true"
+      },
+      "stop sign": {
+        "value": "stop sign",
+        "background": "#d3cc0d",
+        "showInline": "true"
+      },
+      "parking meter": {
+        "value": "parking meter",
+        "background": "#FFC069",
         "showInline": "true"
       }
 

@@ -21,22 +21,22 @@
 
 
 ### Contents:
-  - [Sections](#sections)
-      - [Install the dependencies via conda](#install-the-dependencies-via-conda)
-      - [Install label studio dependencies via conda (in a new terminal)](#install-label-studio-dependencies-via-conda-in-a-new-terminal)
-      - [Run Label Studio database migrations](#run-label-studio-database-migrations)
-      - [Creating the Label Studio project](#creating-the-label-studio-project)
-      - [Create a (free) account](#create-a-free-account)
-      - [Run the auto-label system](#run-the-auto-label-system)
-  - [Contribute](#contribute)
-  - [License](#license)
+- [Sections](#sections)
+  - [Install the dependencies via conda](#install-the-dependencies-via-conda)
+  - [Install label studio dependencies via conda (in a new terminal)](#install-label-studio-dependencies-via-conda-in-a-new-terminal)
+  - [Run Label Studio database migrations](#run-label-studio-database-migrations)
+  - [Creating the Label Studio project](#creating-the-label-studio-project)
+    - [Create a (free) account](#create-a-free-account)
+- [Run the auto-label system](#run-the-auto-label-system)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Sections
 
 ### Install the dependencies via conda
 ```
 git clone https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton.git
-conda create -n auto_annotation python=3.8
+conda create -n auto_annotation python=3.9
 conda activate auto_annotation
 cd aimakr-automated-data-annotaton
 python -m pip install -r requirements.txt
@@ -77,7 +77,11 @@ Access the labelling interface in the project settings and copy and paste the fo
   <Header value="Rectangle Labels"/>
   <RectangleLabels name="tag1" toName="image">
     <Label value="Person" background="#1e05d6"/>
-  <Label value="Car" background="#ed0707"/></RectangleLabels>
+  	<Label value="Car" background="#ed0707"/>
+    <Label value="parking meter" background="#9effec"/>
+    <Label value="fire hydrant" background="#d3cc0d"/>
+    <Label value="stop sign" background="#FFC069"/>
+  </RectangleLabels>
 </View>
 ```
 

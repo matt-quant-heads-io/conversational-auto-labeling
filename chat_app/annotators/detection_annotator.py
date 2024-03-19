@@ -4,7 +4,7 @@ import pathlib
 
 import cv2
 from label_studio_ml.model import LabelStudioMLBase
-from ultralytics import YOLO
+from ultralytics import YOLO, YOLOWorld
 
 import constants
 import utils.utils as utils
@@ -54,9 +54,16 @@ class DetectionAnnotator(LabelStudioMLBase):
         **kwargs,
     ):
         super(DetectionAnnotator, self).__init__(**kwargs)
+        # TODO: Refactor this into a different model wrapper
+        # self.checkpoint_file = (
+        #     str(pathlib.Path(__file__).parent.resolve()) + "/models/yolov8x.pt"
+        # )
+        # self.model = YOLO(self.checkpoint_file)
         self.checkpoint_file = (
-            str(pathlib.Path(__file__).parent.resolve()) + "/models/yolov8x.pt"
+            str(pathlib.Path(__file__).parent.resolve()) + "/models/yolov8s-world.pt"
         )
+        self.model = YOLOWorld(self.checkpoint_file)
+
         self.image_path = f"{PROJECT_ROOT_PATH}/data/images"
         self.labels_file = "labels_config.json"
         self.parsed_label_config = kwargs.get("labels_conf") or json_load(
@@ -69,8 +76,6 @@ class DetectionAnnotator(LabelStudioMLBase):
             self.value,
             self.label_map,
         ) = utils.get_single_tag_keys(self.parsed_label_config)
-
-        self.model = YOLO(self.checkpoint_file)
         self.score_thresh = score_threshold
 
     def predict(self, tasks, **kwargs):
