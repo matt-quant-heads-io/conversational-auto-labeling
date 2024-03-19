@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Conversational Auto-labeling Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            width: 50%;
+        }
+        li:nth-of-type(odd){
+            background-color: #0096FF;
+            color:white;
+            margin-left: 60%;
+            border-radius: 25px;
+            padding: 11px;
+        }
+        li:nth-of-type(even){
+            background-color:lightgrey;
+            color:black;
+            margin-right: 60%;
+            border-radius: 25px;
+            padding: 11px;
+        }
+        h1{
+            text-align: center;
+            width: 702px;
+        }
+        ul {
+            padding-inline: 20px;
+            list-style-type: none;
+            font-size: 12pt;
+        }
+        #chat {
+            width: 700px;
+            height: 300px;
+            overflow: auto;
+            border: dotted 2px;
+            border-radius: 10px; 
+        }
+        input {
+            height: 35px;
+            font-size: 12pt;
+            width: 630px;
+            padding: 5px;
+            border-radius: 20px;
+            float: left;
+        }
+        button {
+            width: 70px;
+            height: 35px;
+            background-color: royalblue;
+            color: white;
+            border-radius: 15px;
+            float: right;
+            margin-left: 2px;
+        }
+        .GridContainer { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            width: 100%; 
+            padding-top: 10px;
+        } 
+    </style>
+  </head>
+  <body>
+    <div class="body">
+    <h1>Conversational Assistant</h1>
+      <div id="chat">
+        <ul>
+        {%for i in val%}
+          <li>{{i}}</li>
+        {%endfor%}
+        </ul>
+      </div>
+    <div>
+      <form class="GridContainer" action="/msg", method="post">
+        <input type="text" placeholder="Write your message..." id="text" name="text">
+        <button type="submit" ><i class="fa-solid fa-lg fa-angles-right"></i></button>
+      </form>
+    </div>
+    </div>
+  </body>
+<script>
+    var element = document.getElementById("chat");
+    element.scrollTop = element.scrollHeight;
+</script>
+</html> 

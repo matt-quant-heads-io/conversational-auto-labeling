@@ -1,0 +1,6 @@
+annotations:
+  types:
+    - bboxes
+    - labels:
+        - Person
+        - Car

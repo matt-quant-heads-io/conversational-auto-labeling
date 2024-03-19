@@ -1,0 +1,31 @@
+{
+  "tag1": {
+    "type": "RectangleLabels",
+    "to_name": [
+      "image"
+    ],
+    "inputs": [
+      {
+        "type": "Image",
+        "value": "image"
+      }
+    ],
+    "labels": [
+      "Person",
+      "Car"
+    ],
+    "labels_attrs": {
+      "Person": {
+        "value": "Person",
+        "background": "#14db36",
+        "showInline": "true"
+      },
+      "Car": {
+        "value": "Car",
+        "background": "#ed0707",
+        "showInline": "true"
+      }
+
+    }
+  }
+}
