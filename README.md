@@ -1,4 +1,4 @@
-<p align="center"> <a href="https://aimakr.io"><img src="" alt="AiMakr Technologies Inc."></img></a></p>
+<p align="center"> <a href="https://aimakr.io"><img src="docs/media/logo.png" alt="AiMakr Technologies Inc." width="150" height="150"></img></a></p>
 <h1 align="center">Conversational Auto-labeling for Computer Vision Tasks</h1>
 <p align="center">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
