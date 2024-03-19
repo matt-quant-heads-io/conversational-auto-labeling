@@ -6,3 +6,4 @@ supervision==0.18.0
 gunicorn==21.2.0
 label_studio_ml==1.0.9
 rq==1.15.1
+rasa==3.6.19
