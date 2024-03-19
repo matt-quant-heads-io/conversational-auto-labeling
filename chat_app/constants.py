@@ -1,13 +1,9 @@
 import pathlib
 
 LABEL_STUDIO_HOST = "http://127.0.0.1:8080/api/"
-# LABEL_STUDIO_ACCESS_TOKEN = "ENTER_YOUR_LABEL_STUDIO_ACCOUNT_KEY"
-# LABEL_STUDIO_PATH_TO_MEDIA_FOLDER = (
-#     "/path/to/label-studio/project/root/label_studio/media/"
-# )
-LABEL_STUDIO_ACCESS_TOKEN = "52cd6164136038a0b386bc8d90f7b5c4cbda594e"
+LABEL_STUDIO_ACCESS_TOKEN = "ENTER_YOUR_LABEL_STUDIO_ACCOUNT_KEY"
 LABEL_STUDIO_PATH_TO_MEDIA_FOLDER = (
-    "/Users/matt/as-auto-data-annotation/label-studio/media/"
+    "/path/to/label-studio/project/root/label_studio/media/"
 )
 PROJECT_ID = 1
 GET_ANNOTATIONS_HTTP_REQ = LABEL_STUDIO_HOST + "tasks/{task_id}/annotations/"
