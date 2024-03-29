@@ -34,8 +34,8 @@
 
 ### Install the dependencies via conda
 ```
-git clone https://github.com/matt-quant-heads-io/aimakr-automated-data-annotaton.git
-conda create -n auto_annotation python=3.9
+git clone https://github.com/matt-quant-heads-io/conversational-auto-labeling.git
+conda create -n auto_annotation python=3.10
 conda activate auto_annotation
 cd aimakr-automated-data-annotaton
 python -m pip install -r requirements.txt
@@ -44,7 +44,7 @@ python -m pip install -r requirements.txt
 ```
 cd # i.e. from your home dir
 git clone https://github.com/HumanSignal/label-studio.git
-conda create -n label-studio python=3.11
+conda create -n label-studio python=3.10
 conda activate label-studio
 cd label-studio
 python -m pip install -e .
